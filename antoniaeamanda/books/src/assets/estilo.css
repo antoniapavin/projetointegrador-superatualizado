@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: 
+    "header content"
+    "sidenav content"
+    "sidenav content";
+}
+
+/*#header, #content, #sidenav, #footer {
+  border:;
+}*/
+
+#header {
+  grid-area: header;
+}
+
+
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer {
+  grid-area: footer;
+}
+#sidenav {
+  grid-area: sidenav;
+  padding: 10px;
+  font-size: 25px;
+  color: #12568A;
+}
+
